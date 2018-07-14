@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.3.1.slim.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			margin: 0 auto;
+			width: 800px;
+			background-image: url(images/bc.jpg);
+			background-repeat: no-repeat;
+
+			background-position: 50% 0;
+		}
+		#head{
+			width: 230px;
+			height: 180px;
+			background-color: #FFD700;
+		}
+		#head h2{
+			text-align: center;
+			padding-top: 70px;
+		}
+		#left{
+			width: 230px;
+			height: 180px;
+			background-color: #fff;
+			margin-top: 220px;
+		}
+		#left p{
+			font-size: 20px;
+			text-align: center;
+			padding-top: 10px;
+		}
+		#left button{
+			background-color: 	#FFD700;
+			border: none;
+			color: 		#FAFAD2; 
+			text-align: center;
+			height: 30px;
+			width: 180px;
+			font-size: 15px;
+			margin-top: 15px;
+			margin-left: 20px;
+			outline: none;
+		}
+		#left button:hover{
+			box-shadow: 1px 2px 6px #D3D3D3;
+		}
+		#img{
+			width: 100px;
+			height: 100px;
+			background-image: url(images/head.jpg);
+			background-repeat: no-repeat;
+			border-radius: 50%;
+			margin-top: 10px;
+			margin-left:65px; 
+		}
+		#right{
+			width: 570px;
+			height: 200px;
+			margin-left: 240px;
+			margin-top: -150px;
+			padding-left: 50px;
+			padding-top: 15px;
+		}
+		#right p{
+			padding-left: 15px;
+			padding-bottom: 5px;
+		}
+		#right button{
+			background-color: 	#FFD700;
+			border: none;
+			border-radius: 15px;
+			color: 	#FAFAD2; 
+			text-align: center;
+			height: 30px;
+			width: 80px;
+			font-size: 15px;
+			margin-top: 15px;
+			margin-left: 20px;
+			outline: none;
+		}
+		#right a{
+			text-decoration: none;
+			color: 	#FAFAD2;
+		}
+		#right input{
+			outline: none;
+			padding-left: 36px;
+			border: 1px;
+			width: 100px;
+			height: 25px;
+			background:rgba(245,245,245,0.8);
+			color: 	#696969;
+		}
+		#right1{
+			width: 570px;
+			height: 200px;
+			margin-left: 240px;
+			margin-top: -150px;
+			padding-left: 50px;
+			padding-top: 15px;
+		}
+		#right1 p{
+			padding-left: 15px;
+			padding-bottom: 5px;
+		}
+		#right1 button{
+			background-color: 	#FFD700;
+			border: none;
+			border-radius: 15px;
+			color: 	#FAFAD2; 
+			text-align: center;
+			height: 30px;
+			width: 80px;
+			font-size: 15px;
+			margin-top: 15px;
+			margin-left: 20px;
+			outline: none;
+		}
+		#right1 a{
+			text-decoration: none;
+			color: 	#FAFAD2;
+		}
+		#right1 input{
+			outline: none;
+			padding-left: 36px;
+			border: 1px;
+			width: 100px;
+			height: 25px;
+			background:rgba(245,245,245,0.8);
+			color: 	#696969;
+		}
+		#right1{
+			margin-top: -150px;
+		}
+	</style>
+	<script>
+		$(document).ready(function change(argument) {
+			// body...
+			$('#btn1').click(function function_name(argument) {
+				// body...
+
+				$('#right').hide();
+				$('#right1').show();
+			});
+
+			$('#btn2').click(function function_name(argument) {
+				// body...
+
+				$('#right').show();
+				$('#right1').hide();
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div id="head">
+		<h2>Welcome</h2>
+	</div>
+	<div id="left">
+		<p>用户</p>
+		<div id="img">			
+		</div>
+		<button type="submit" formtarget="_blank">新建联系人</button>
+		<button type="submit">注销此用户</button>
+	</div>
+	<div id="right" style="display: block;">
+		<p>id</p>
+		<p>username</p>
+		<p>phone</p>
+		<button type="submit" formtarget="_blank" id="btn1"><a href="javascript:void(0)">修改</a></button>
+		<button type="submit"><a href="javascript:void(0)">删除</a></button>
+		
+	</div>
+	<div id="right1" style="display: none;">
+			Name<input type="text"><br>
+			Phone<input type="text"><br>
+			<button type="submit" formtarget="_blank"><a href="javascript:void(0)">确定修改</a></button>
+			<button type="submit" id="btn2"><a href="javascript:void(0)" >返回查看</a></button>
+	</div>
+</body>
+</html>
