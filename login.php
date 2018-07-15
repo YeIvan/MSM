@@ -131,7 +131,7 @@ if(isset($_SESSION['username'])){
         </div>
         <div class="bor">
             <input name="captcha" type="text" placeholder="请输入图片中的验证码"><br/>
-            <img src="gd.php" onclick="this.src='gd.php?captcha='+Math.random()"/><br/>
+            <img src="captcha.php" onclick="this.src='captcha.php?captcha='+Math.random()"/><br/>
         </div>
         <button type="submit" id="btn1" name="submit" value="登录">登录</button>
     </div>
